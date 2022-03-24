@@ -1,0 +1,5 @@
+[
+  { "title": "pan", "price": "200", "thumb": "pan.png" },
+  { "title": "café", "price": "900", "thumb": "cafe.jpg" },
+  { "title": "cocacola", "price": "180", "thumb": "coca.pdf" }
+]

@@ -1,0 +1,42 @@
+h1 Add a product
+hr
+|
+form(
+  action="/productos"
+  method="POST"
+)
+  label(
+    for="title"
+  ) Name
+  br
+  input(
+    name="title"
+    type="text"
+    required
+  )
+  br
+  label(
+    for="price"
+  ) Price
+  br
+  input(
+    name="price"
+    type="number"
+    required
+  )
+  br
+  label(
+    for="thumb"
+  ) Image url
+  br
+  input(
+    name="thumb"
+    type="text"
+    required
+  )
+  br
+  br
+  button= 'Send'
+  hr
+a(href="http://localhost:8080/productos")
+  button= 'products list'

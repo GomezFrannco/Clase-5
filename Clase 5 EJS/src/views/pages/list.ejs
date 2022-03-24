@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos EJS</title>
+  </head>
+  <body>
+    <h1>Products list</h1>
+    <hr>
+    <% if (products.length > 0) { %>
+      <table>
+        <tr>
+          <th>name</th>
+          <th>price</th>
+          <th>thumbnail</th>
+        </tr>
+        <% for (const i of products) { %>
+          <tr>
+            <td><%- i.title %></td>
+            <td><%- i.price %></td>
+            <td><%- i.thumbnail %></td>
+          </tr>
+          <% } %>
+      </table>
+      <hr>
+      <a href="http://localhost:8080""><button>go back</button></a>
+    <% } else { %>
+      <% include('partials/empty.ejs') %>
+    <% } %>
+  </body>
+</html>

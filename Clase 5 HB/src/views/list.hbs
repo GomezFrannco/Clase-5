@@ -1,0 +1,23 @@
+<h1>products list</h1>
+<hr />
+{{#if listLength}}
+  <table>
+    <tr>
+      <th>name</th>
+      <th>price</th>
+      <th>thumbnail</th>
+    </tr>
+    {{#each list}}
+      <tr>
+        <td>{{this.title}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.thumbnail}}</td>
+      </tr>
+    {{/each}}
+  </table>
+{{else}}
+  {{>empty}}
+{{/if}}
+<hr />
+<a href="http://localhost:8080"><button>go back</button></a>
+

@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= 'Productos Pug'
+  body
+    h1 Products list 
+    hr
+  if listLength
+    table 
+      tr 
+        th name
+        th price 
+        th thumbnail
+      tr
+      each item in list
+        td= item.title 
+        td= item.price 
+        td= item.thumb
+    
+  else
+    include includes/empty.pug
+  hr
+  a(href="http://localhost:8080")
+    button= 'go back'
